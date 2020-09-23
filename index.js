@@ -115,7 +115,7 @@ class Game {
       (a, v) => a + (v.active ? 1 : 0),
       0
     );
-    return activePlayers <= 1;
+    return activePlayers < 1;
   }
 
   getWinner() {
@@ -184,6 +184,7 @@ class Game {
     }
   }
 }
+
 
 players = [
   {
